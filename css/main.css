@@ -20,13 +20,20 @@
 }
 
 body, html {
-  background: #c850c0;
+  /* background: #c850c0;
   background: -webkit-linear-gradient(deg, #4158d0, #c850c0);
   background: -o-linear-gradient(90deg, #4158d0, #c850c0);
   background: -moz-linear-gradient(90deg, #4158d0, #c850c0);
-  background: linear-gradient(90deg, #4158d0, #c850c0);
-	height: 100%;
-	font-family: sans-serif;
+  background: linear-gradient(90deg, #4158d0, #c850c0); */
+
+  /* background-image: linear-gradient(to right, #00026c, #002e8f, #0052ae, #0075c9, #0099e0, #0099e0, #0099e0, #0099e0, #0075c9, #0052ae, #002e8f, #00026c);	height: 100%; */
+  
+  /* background-color: #000000;
+  padding: 0px;
+  margin: 0px; */
+  
+  font-family: 'Quicksand', sans-serif;
+  color: #ddd;
 }
 
 /* ------------------------------------ */
@@ -110,13 +117,18 @@ iframe {
 .container-table100 {
   width: 100%;
   /*min-height: 100vh;*/
-  background: #c850c0;
+  /* background: #c850c0;
   background: -webkit-linear-gradient(90deg, #4158d0, #c850c0);
   background: -o-linear-gradient(90deg, #4158d0, #c850c0);
   background: -moz-linear-gradient(90deg, #4158d0, #c850c0);
-  background: linear-gradient(90deg, #4158d0, #c850c0);
+  background: linear-gradient(90deg, #4158d0, #c850c0); */
 
-  display: -webkit-box;
+  /* background-image: linear-gradient(to right, #00026c, #002e8f, #0052ae, #0075c9, #0099e0, #0099e0, #0099e0, #0099e0, #0075c9, #0052ae, #002e8f, #00026c);  display: -webkit-box; */
+
+  /* background-color: #000000;
+  padding: 0px;
+  margin: 0px; */
+  
   display: -webkit-flex;
   display: -moz-box;
   display: -ms-flexbox;
@@ -198,12 +210,12 @@ tbody tr:hover {
 }
 
 .column1 {
-  width: 120px;
+  width: 90px;
   padding-left: 20px;
 }
 
 .column2 {
-  width: 100px;
+  width: 90px;
   text-align: center;
 }
 
@@ -327,8 +339,6 @@ tbody tr:hover {
   }
 } 
 
-
-
 .chartBarsWrap {
   padding-left: 40px;
   margin: 0 30px 0 20px;
@@ -336,7 +346,7 @@ tbody tr:hover {
 }
 .chartBars {
   position: relative;
-  max-width: 600px;
+  max-width: 1500px;
   height: 300px;
   margin: 50px auto 100px;
 }
@@ -361,7 +371,7 @@ tbody tr:hover {
   font-size: 16px;
 }
 .chartBars .bars li .bar {
-  width: 100%;
+  width: 80%;
   background: #49E;
   position: absolute;
   font-size: 1.5em;
@@ -375,15 +385,15 @@ tbody tr:hover {
   transition: 1.5s height cubic-bezier(0.6, 0.4, 0.4, 1.1);
 }
 .chartBars .bars li .bar:after {
-  content: '%';
-  font-size: 22px !important;
+  content: 'seconds';
+  font-size: 15px !important;
   vertical-align: top;
   color: rgba(255, 255, 255, 0.8);
   margin-right: -8px;
 }
 .chartBars .bars li b {
   color: #eee;
-  width: 100%;
+  width: 80%;
   position: absolute;
   bottom: -2em;
   left: 0;
@@ -404,7 +414,7 @@ tbody tr:hover {
   list-style: none;
   height: 59px;
   position: relative;
-  font-size: 13px;
+  font-size: 12px;
   bottom: 11px;
   right: -9px;
   color: #eee;
@@ -485,16 +495,16 @@ tbody tr:hover {
   margin-right: 20px;
 }
 .bars li .bar.greenBar {
-  background-color: #8cce09;
-  background: radial-gradient(#99cb32,#8cce09);
-}
-.bars li .bar.redBar {
-  background-color: #c52626;
-  background: radial-gradient#c85c5c,#c52626);
+  background-color: #a7f015;
+  background: radial-gradient(#c4f75f,#a7f015);
 }
 .bars li .bar.yellowBar {
-  background-color: #ffee05;
-  background: radial-gradient(#bba648#ffee05);
+  background-color: #fdec00fd;
+  background: radial-gradient(#fff67bfd, #fdec00fd);
+}
+.bars li .bar.redBar {
+  background-color: #ff0000;
+  background: radial-gradient( #ff6b6b, #ff0000);
 }
 .box-piesite {
   text-align: center;
@@ -651,9 +661,10 @@ h1 {
   color: #F0B015;
 }
 h2 {
-  margin: 50px auto 0;
-  font-size: 3em;
-  font-weight: 500;
+  margin: 20px auto 0;
+  font-size: 3.2em;
+  font-weight: 660;
+  padding-top: 20px;
   color: #ffffff;
 }
 p {
@@ -665,5 +676,24 @@ p {
 
 div.chartBarsWrap {
   padding-top: 100px;
-  padding-bottom: 70px;
+}
+.chartBars p.test1 {
+  /* position: left; */
+  text-align: left;
+  /* See http://caniuse.com/#feat=transforms2d */
+  transform: rotate(90deg);
+  writing-mode: sideways-lr;
+  margin-left: 0px;
+}
+#gradient
+{
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+#eyantraLogo
+{
+  padding-top: 90px;
 }
